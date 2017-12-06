@@ -2,18 +2,35 @@ html {
   background-color: #06070D;
   font-family: 'Lato', sans-serif;
 }
-body
-{
+
+body {
   margin: 0;
   padding: 0;
 }
 
+header {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.iconsHeader {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.iconsHeader img {
+  width: 25px;
+}
+
+.equalizer, .spotify {
+  padding: 10px;
+}
+
 #logo img {
   width: 80px;
-  float: left;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 }
 
 .navigation a {
