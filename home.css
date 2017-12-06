@@ -1,0 +1,9 @@
+#head {
+    background-color: none;
+    background-image: url(../2ndSem-Exam/img/bgheadhome@2x.png) no-repeat center center fixed !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
