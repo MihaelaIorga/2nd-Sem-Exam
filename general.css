@@ -26,6 +26,28 @@ header {
   padding: 10px;
 }
 
+#logo {
+    margin-right: 100px;
+}
+
+.spotify {
+    background: none;
+    border: none;
+    width: auto;
+    color: white;
+    display: flex;
+}
+
+.spotify p {
+    margin: 0;
+    padding: 6px;
+}
+
+.equalizer {
+    background: none;
+    border: none;
+}
+
 #logo img {
   width: 80px;
   display: flex;
