@@ -43,6 +43,7 @@ h3 {
 }
 
 #list {
+    margin-top: -3.9em;
     padding-top: 2em;
     padding-bottom: 2em;
     background-color: rgba(17, 17, 19, 1);
