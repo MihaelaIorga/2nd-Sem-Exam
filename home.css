@@ -23,6 +23,7 @@ h3 {
     text-align: right;
     padding-right: 1em;
     font-size: 4em;
+    font-weight: 400;
     margin: 0;
     color: white;
     background: -webkit-linear-gradient(top, rgba(17, 17, 19, 0), rgba(17, 17, 19, 0.9));
@@ -109,6 +110,10 @@ a {
 
 #list .title {
     margin-left: 30px;
+}
+
+.title h1 {
+    font-weight: 400;
 }
 
 .music {
