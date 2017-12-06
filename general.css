@@ -1,6 +1,6 @@
 html {
   font-family: 'Heebo', sans-serif;
-  background-color: rgba(17,17,19,1);
+  background-color: rgba(17, 17, 19, 1);
 }
 
 body {
@@ -18,8 +18,8 @@ header {
 .iconsHeader {
   display: flex;
   justify-content: flex-start;
-    padding-top: 10px;
-    padding-left: 30px
+  padding-top: 10px;
+  padding-left: 30px
 }
 
 .iconsHeader img {
@@ -30,26 +30,26 @@ header {
   padding: 10px;
 }
 
-#logo {
-    margin-right: 200px;
-}
-
 .spotify {
-    background: none;
-    border: none;
-    width: auto;
-    color: white;
-    display: flex;
+  background: none;
+  border: none;
+  width: auto;
+  color: white;
+  display: flex;
 }
 
 .spotify p {
-    margin: 0;
-    padding: 12px;
+  margin: 0;
+  padding: 12px;
 }
 
 .equalizer {
-    background: none;
-    border: none;
+  background: none;
+  border: none;
+}
+
+#logo {
+  margin-left: -100px;
 }
 
 #logo img {
@@ -97,7 +97,7 @@ body.overflow {
 }
 
 #burger-menu {
-  position: absolute;
+  z-index: 1;
   right: 0;
   padding: 30px;
   margin-right: 6px;
@@ -119,4 +119,3 @@ body.overflow {
 #burger-menu.open #closed {
   display: none;
 }
-
