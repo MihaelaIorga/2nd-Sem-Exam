@@ -10,7 +10,8 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  overflow: visible;
+  overflow: hidden;
+  padding-top: 10px;
 }
 
 .iconsHeader {
@@ -49,7 +50,7 @@ header {
 }
 
 #logo img {
-  width: 80px;
+  width: 100px;
   display: flex;
   justify-content: center;
   padding: 10px;
