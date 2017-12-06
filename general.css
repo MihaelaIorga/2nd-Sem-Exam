@@ -18,10 +18,12 @@ header {
 .iconsHeader {
   display: flex;
   justify-content: flex-start;
+    padding-top: 10px;
+    padding-left: 30px
 }
 
 .iconsHeader img {
-  width: 25px;
+  width: 35px;
 }
 
 .equalizer, .spotify {
@@ -29,7 +31,7 @@ header {
 }
 
 #logo {
-    margin-right: 100px;
+    margin-right: 200px;
 }
 
 .spotify {
@@ -42,7 +44,7 @@ header {
 
 .spotify p {
     margin: 0;
-    padding: 6px;
+    padding: 12px;
 }
 
 .equalizer {
@@ -51,10 +53,10 @@ header {
 }
 
 #logo img {
-  width: 100px;
+  width: 150px;
   display: flex;
   justify-content: center;
-  padding: 10px;
+  padding: 0px;
 }
 
 .navigation a {
@@ -97,7 +99,7 @@ body.overflow {
 #burger-menu {
   position: absolute;
   right: 0;
-  padding: 10px;
+  padding: 30px;
   margin-right: 6px;
   display: block;
   border-color: transparent;
