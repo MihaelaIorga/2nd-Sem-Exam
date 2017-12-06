@@ -19,7 +19,21 @@ video {
     opacity: .5;
 }
 
+.release {
+    height: 130px;
+    background: -webkit-linear-gradient(top, rgba(17, 17, 19, 0), rgba(17, 17, 19, 1));
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(top, rgba(17, 17, 19, 0), rgba(17, 17, 19, 1));
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top, rgba(17, 17, 19, 0), rgba(17, 17, 19, 1));
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(top, rgba(17, 17, 19, 0), rgba(17, 17, 19, 1));
+    /* Standard syntax (must be last) */
+}
+
 h3 {
+    padding-top: 100px;
+    vertical-align: baseline;
     text-align: right;
     font-size: 4em;
     font-weight: 400;
@@ -28,14 +42,7 @@ h3 {
     line-height: 36px;
     position: static;
     color: white;
-    background: -webkit-linear-gradient(top, rgba(17, 17, 19, 0), rgba(17, 17, 19, 0.9));
-    /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom, rgba(17, 17, 19, 0), rgba(17, 17, 19, 1));
-    /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom, rgba(17, 17, 19, 0), rgba(17, 17, 19, 1));
-    /* For Firefox 3.6 to 15 */
-    background: linear-gradient(bottom, rgba(17, 17, 19, 0), rgba(17, 17, 19, 1));
-    /* Standard syntax (must be last) */
+
 }
 
 #mcontainer {
@@ -45,7 +52,6 @@ h3 {
 }
 
 #list {
-    margin-top: -0.1em;
     padding-bottom: 2em;
     background: rgba(17, 17, 19, 1);
     display: flex;
@@ -55,7 +61,7 @@ h3 {
 }
 
 #eventbutton {
-    margin-top: 14%;
+    margin-top: 16em;
     width: 15em;
     height: 3em;
     background-color: blue;
@@ -63,7 +69,7 @@ h3 {
     display: flex;
     justify-content: center;
     font-weight: 100;
-    line-height: 0.5em;
+    line-height: 0.8em;
     font-size: 0.8em;
 }
 
@@ -74,7 +80,7 @@ h3 {
     display: flex;
     justify-content: center;
     font-weight: 100;
-    line-height: 0.5em;
+    line-height: 0.8em;
     font-size: 0.8em;
 }
 
