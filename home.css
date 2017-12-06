@@ -1,20 +1,110 @@
+
+
 #head {
     width: 100%;
-    height: 80vh;
+    height: 75vh;
 }
 
 video {
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     width: 100%;
     height: auto;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
- background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
   background-size: cover;
   transition: 1s opacity;
+
 }
 .stopfade {
    opacity: .5;
+}
+
+h3 {
+    text-align: right;
+    padding-right: 1em;
+    font-size: 4em;
+    margin: 0;
+    color:white;
+     background: -webkit-linear-gradient(top, rgba(17,17,19,0), rgba(17,17,19,0.9)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom, rgba(17,17,19,0), rgba(17,17,19,1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom, rgba(17,17,19,0), rgba(17,17,19,1)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(bottom, rgba(17,17,19,0), rgba(17,17,19,1)); /* Standard syntax (must be last) */
+}
+
+
+
+#mcontainer{
+    width: auto;
+    background: blue important!;
+}
+#list{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: rgba(17,17,19,1);
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-around
+
+}
+#eventbutton{
+   width: 15em;
+    height: 4em;
+    text-align: center;
+    background-color: blue;
+    margin-left: 40vw;
+    margin-top: 4em;
+    display: flex;
+    justify-content: center;
+}
+a{
+    color: white;
+        padding-top: 1.1em;
+    text-decoration: none
+}
+.event{
+        border: 2px solid black;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1em
+}
+
+#list h1 {
+color: white;
+margin: 0;}
+
+.details {
+    display: inline-flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#list .date {
+
+    width: 50%;
+    font-weight: 100;
+    color: white;
+    margin: 0;
+    font-size: 0.8em;
+}
+
+#list .title {
+    margin-left: 10px;
+
+}
+
+.music {
+    background-color: #151516;
+    box-shadow: 8px 8px 80px 8px #050510;
+    display: grid;
+}
+
+.buy {
+    margin-right: 10px;
+}
+
+.music img {
+    margin: 10px;
 }
