@@ -1,166 +1,190 @@
 #head {
-    width: 100%;
-    height: 65vh;
+  width: 100%;
+  height: 65vh;
 }
 
 video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: auto;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
-    background-size: cover;
-    transition: 1s opacity;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+  transition: 1s opacity;
 }
 
 .stopfade {
-    opacity: .5;
+  opacity: .5;
 }
 
 .release {
-    height: 130px;
-    background: -webkit-linear-gradient(top, rgba(17, 17, 19, 0), rgba(17, 17, 19, 1));
-    /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(top, rgba(17, 17, 19, 0), rgba(17, 17, 19, 1));
-    /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(top, rgba(17, 17, 19, 0), rgba(17, 17, 19, 1));
-    /* For Firefox 3.6 to 15 */
-    background: linear-gradient(top, rgba(17, 17, 19, 0), rgba(17, 17, 19, 1));
-    /* Standard syntax (must be last) */
+  height: 130px;
+  background: -webkit-linear-gradient(top, rgba(17, 17, 19, 0), rgba(17, 17, 19, 1));
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(top, rgba(17, 17, 19, 0), rgba(17, 17, 19, 1));
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(top, rgba(17, 17, 19, 0), rgba(17, 17, 19, 1));
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(top, rgba(17, 17, 19, 0), rgba(17, 17, 19, 1));
+  /* Standard syntax (must be last) */
 }
 
-h3 {
-    padding-top: 100px;
-    vertical-align: baseline;
-    text-align: right;
-    font-size: 4em;
-    font-weight: 400;
-    margin: 0;
-    padding-right: 30px;
-    line-height: 36px;
-    position: static;
-    color: white;
+h1 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 36px;
+  color: white;
+}
 
+.pageheadline {
+  text-align: right;
+  padding-top: 100px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 27px;
 }
 
 #mcontainer {
-    width: auto;
-    background: blue;
-    display: none;
+  width: auto;
+  background: blue;
+  display: none;
 }
 
 #list {
-    padding-bottom: 2em;
-    background: rgba(17, 17, 19, 1);
-    display: flex;
-    flex-direction: row;
-    flex-flow: row wrap;
-    justify-content: space-around;
+  padding-bottom: 2em;
+  background: rgba(17, 17, 19, 1);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+#list article {
+  max-width: 340px;
 }
 
 #eventbutton {
-    margin-top: 16em;
-    width: 15em;
-    height: 3em;
-    background-color: blue;
-    border: 1px solid white;
-    display: flex;
-    justify-content: center;
-    font-weight: 100;
-    line-height: 0.8em;
-    font-size: 0.8em;
+  background-color: blue;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  padding: 15px 100px;
 }
 
-#allbutton {
-    width: 15em;
-    height: 3em;
-    background-color: #ff003c;
-    display: flex;
-    justify-content: center;
-    font-weight: 100;
-    line-height: 0.8em;
-    font-size: 0.8em;
+.primarybtn {
+  cursor: pointer;
+  background-color: #ff003c;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  padding: 12px;
 }
 
 a {
-    color: white;
-    padding-top: 1.1em;
-    text-decoration: none
+  color: white;
+  font-weight: 200;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.secondarybtn {
+  border: 1px solid #fff;
+  cursor: pointer;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  padding: 12px;
 }
 
 .event {
-    border: 2px solid black;
-    background-color: white;
-    border-radius: 10px;
-    padding: 1em
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1em
 }
 
-#list h1 {
-    color: white;
-    margin: 0;
+#list h2 {
+  font-size: 21px;
+  color: white;
+  margin: 0;
 }
 
 .details {
-    display: inline-flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
+  display: inline-flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 #list .date {
-    width: 50%;
-    font-weight: 100;
-    color: white;
-    margin: 0;
-    font-size: 0.8em;
+  font-weight: 100;
+  color: white;
+  margin: 0;
+  font-size: 0.8em;
 }
 
 #list .title {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
-.title h1 {
-    font-weight: 400;
+.title h2 {
+  font-weight: 400;
 }
 
 .music {
-    background-color: #151516;
-    box-shadow: 10px 8px 40px 8px #050510;
-    display: grid;
+  background-color: #151516;
+  box-shadow: 10px 8px 40px 8px #050510;
+  display: grid;
+  margin: 20px 0;
 }
 
-.buy {
-    margin-right: 30px;
-    height: 40px;
-    width: 120px;
-    background-color: #1c1d2a;
-    border: none;
-    border-radius: 0px;
-    color: white;
-    font-weight: 100;
+.playbtn {
+  margin-right: 30px;
+  height: 40px;
+  width: 40px;
+  border: none;
 }
 
 .music img {
-    max-height: 70%;
-    max-width: 100%;
-    margin: 30px;
+  max-width: 300px;
+  margin: 20px;
 }
 
 #banner {
-    margin-top: 50px;
-    background-image: url(img/banner@1x.png);
-    background-size: cover;
-    height: 300px;
-    width: 1440px;
-    display: flex;
-    justify-content: center;
+  margin-top: 50px;
+  background-image: url(img/banner@1x.png);
+  background-size: cover;
+  text-align: center;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
+#banner h1 {
+  color: white;
+  font-size: 36px;
+}
 
 #allmusic {
-    margin-top: 20px;
-    width: 1440px;
-    display: flex;
-    justify-content: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+  #list {
+    flex-direction: row;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 }
