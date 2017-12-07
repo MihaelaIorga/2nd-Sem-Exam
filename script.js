@@ -18,7 +18,7 @@ function showMusics(data) {
 
 
     data.forEach(function (theMusic) {
-       console.log(theMusic);
+        console.log(theMusic);
         let clone = template.cloneNode(true);
         let title = clone.querySelector("h2");
         let date = clone.querySelector(".date span");
@@ -30,11 +30,12 @@ function showMusics(data) {
 
 
         title.textContent = theMusic.title.rendered;
-       date.textContent = theMusic.acf.publish_date;        img.setAttribute("src",theMusic._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url);
-       // link.setAttribute("href", "event.html?id=" + theMusic.id);
-mcontainer.innerHTML=theMusic.content.rendered;
-
-
+        date.textContent = theMusic.acf.publish_date;
+        img.setAttribute("src", theMusic._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url);
+       
+        mcontainer.innerHTML = theMusic.content.rendered;
+        clone.querySelector(".dBookNow").setAttribute("href", theMusic.acf.buy);
+       
         list.appendChild(clone);
     });
 }
@@ -46,7 +47,7 @@ function showEvents(mydata) {
 
 
     data.forEach(function (theEvent) {
-       console.log(theEvent);
+        console.log(theEvent);
         let clone = template.cloneNode(true);
         let title = clone.querySelector("h2");
         let date = clone.querySelector(".date span");
@@ -56,9 +57,9 @@ function showEvents(mydata) {
 
 
         title.textContent = theEvent.title.rendered;
-       date.textContent = theEvent.acf.event_date;
-       place.textContent = theEvent.acf.place;
-       // link.setAttribute("href", "event.html?id=" + theMusic.id);
+        date.textContent = theEvent.acf.event_date;
+        place.textContent = theEvent.acf.place;
+        // link.setAttribute("href", "event.html?id=" + theMusic.id);
 
         list.appendChild(clone);
     });
@@ -68,8 +69,8 @@ function showEvents(mydata) {
 let searchParams = new URLSearchParams(window.location.search);
 let posts = searchParams.get("posts");
 
-if(posts){
-getAllEvents();
+if (posts) {
+    getAllEvents();
+} else {
+    get3Musics();
 }
-else{
-get3Musics();}
