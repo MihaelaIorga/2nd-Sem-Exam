@@ -17,9 +17,14 @@
 <body>
 	<header id="header">
 		<div class="iconsHeader">
-			<button class="equalizer">
-					<img src="img/equalizer.png" alt="">
-			</button>
+			<div class='equalizercontainer'>
+		    <div class='equalizerbar'></div>
+		    <div class='equalizerbar'></div>
+		    <div class='equalizerbar'></div>
+		    <div class='equalizerbar'></div>
+		    <div class='equalizerbar'></div>
+		    <div class='equalizerbar'></div>
+		  </div>
 			<button class="spotify">
 				<img src="img/spotify.png" alt=""> <p>Follow me</p>
 			</button>
@@ -121,14 +126,9 @@
         </article>
 
     </template>
-
-
-		<script src="./generalscript.js"></script>
-		<script src="script.js"></script>
-		<script src="homevideo.js"></script>
 	</main>
 	<footer>
-		<section class="musicfollow">
+		<div class="musicfollow">
 			<div class="column">
 				<button class="social">
 					<img src="img/soundcloud.png" alt="">
@@ -151,12 +151,13 @@
 					<img src="img/twitter.png" alt="">
 				</button>
 			</div>
-		</section>
-		<section class="copyright">
+		</div>
+		<div class="copyright">
 			<p>Copyright © Stas 2018. All rights reserved.</p>
-		</section>
+		</div>
 	</footer>
-
+	<script src="./generalscript.js"></script>
+	<script src="script.js"></script>
 </body>
 
 </html>
