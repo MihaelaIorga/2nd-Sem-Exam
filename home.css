@@ -164,6 +164,7 @@ a {
 #banner h1 {
   color: white;
   font-size: 36px;
+  font-weight: 300;
 }
 
 #allmusic {
@@ -179,30 +180,28 @@ a {
     margin: 0 auto;
   }
   video {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: auto;
-  z-index: -100;
-  transform: translateX(-50%) translateY(-50%);
-  background-size: cover;
-  transition: 1s opacity;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    transition: 1s opacity;
+  }
 }
-}
-
 
 @media screen and (max-width: 1024px) {
-
   video {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  width: 400%;
-  height: auto;
-  z-index: -100;
-  transform: translateX(-50%) translateY(-50%);
-  background-size: cover;
-  transition: 1s opacity;
-}
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 400%;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    transition: 1s opacity;
+  }
 }

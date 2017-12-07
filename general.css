@@ -34,17 +34,12 @@ button {
   padding: 10px;
 }
 
-.spotify {
-  background: none;
-  border: none;
-  width: auto;
-  color: white;
-  display: flex;
+.iconsHeader .spotify {
+  display: none;
 }
 
 .spotify p {
-  margin: 0;
-  padding: 12px;
+  display: none;
 }
 
 .equalizer {
@@ -53,12 +48,11 @@ button {
 }
 
 #logo {
-  margin-left: -100px;
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 #logo img {
-    max-width: 150px;
+  max-width: 100px;
   display: flex;
   justify-content: center;
   padding: 0px;
@@ -66,12 +60,21 @@ button {
 
 .navigation a {
   color: black;
-  font-size: 25px;
+  font-size: 55px;
   font-weight: bold;
 }
 
+.navigation .spotify p {
+  display: block;
+}
+
+.navigation .spotify img {
+  max-width: 50px;
+}
+
 .navigation a:hover {
-  color: #C81C1C;
+  color: #fff;
+  background-color: #000;
 }
 
 .desktopmenu {
@@ -126,45 +129,100 @@ body.overflow {
 }
 
 footer {
-    height: 100px;
-    display: flex;
-        justify-content: space-between;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 0;
 }
 
-footer p {
+.copyright {
+  font-size: 0.8em;
+  color: #9E9E9E;
+  font-weight: 100;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.musicfollow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.musicfollow .column {
+  display: flex;
+  align-items: center;
+}
+
+.socialmedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social img {
+  max-width: 30px;
+  max-height: 25px;
+}
+
+.social {
+  background: none;
+  border: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .iconsHeader .spotify {
+    display: flex !important;
+    background: none;
+    border: none;
+    width: auto;
+    color: white;
+  }
+  .iconsHeader .spotify p {
+    display: block;
+    margin: 0;
+    padding: 12px;
+  }
+
+  .navigation .spotify {
+    display: none;
+  }
+  #logo {
+    margin-left: -100px;
+    margin-top: 20px;
+  }
+  #logo img {
+    max-width: 150px;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+  }
+  .socialmedia {
+    display: inline-flex;
+    float: right;
+    padding-right: 30px;
+  }
+  footer {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  .copyright {
     font-size: 0.8em;
     color: #9E9E9E;
     font-weight: 100;
     line-height: 6em;
-}
-
-.musicfollow {
+    position: absolute;
+    width: 100%;
+    max-width: 1024px;
+  }
+  .musicfollow {
     display: flex;
-    float: left;
-    padding-left: 30px;
-}
-
-.socialmedia {
-    display: inline-flex;
-    float:right;
-    padding-right: 30px;
-
-}
-
-.social img {
-    max-width: 30px;
-}
-
-.social {
-    background: none;
-    border: none;
-}
-
-@media screen and (max-width: 1024px) {
-  #logo {
-      display: none;
-}
-    footer p {
-        display: none;
-    }
+    justify-content: space-between;
+    width: 100%;
+  }
 }
