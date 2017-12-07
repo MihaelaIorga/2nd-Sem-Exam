@@ -54,10 +54,11 @@ button {
 
 #logo {
   margin-left: -100px;
+    margin-top: 20px;
 }
 
 #logo img {
-  width: 150px;
+    max-width: 150px;
   display: flex;
   justify-content: center;
   padding: 0px;
@@ -122,4 +123,48 @@ body.overflow {
 
 #burger-menu.open #closed {
   display: none;
+}
+
+footer {
+    height: 100px;
+    display: flex;
+        justify-content: space-between;
+}
+
+footer p {
+    font-size: 0.8em;
+    color: #9E9E9E;
+    font-weight: 100;
+    line-height: 6em;
+}
+
+.musicfollow {
+    display: flex;
+    float: left;
+    padding-left: 30px;
+}
+
+.socialmedia {
+    display: inline-flex;
+    float:right;
+    padding-right: 30px;
+
+}
+
+.social img {
+    max-width: 30px;
+}
+
+.social {
+    background: none;
+    border: none;
+}
+
+@media screen and (max-width: 1024px) {
+  #logo {
+      display: none;
+}
+    footer p {
+        display: none;
+    }
 }
