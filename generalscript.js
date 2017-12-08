@@ -4,21 +4,33 @@ let navmenu = document.querySelector('.desktopmenu');
 let body = document.querySelector('body');
 let menu = document.querySelector('#burger-menu');
 let logo = document.querySelector('#logo');
+let opened = document.querySelector('#opened');
+
+let isMenuOpened = false;
 
 menu.addEventListener('click', openMenu);
 
 function openMenu() {
-  console.log('click');
-  menu.classList.toggle('open');
-  navmenu.classList.toggle('active');
   body.classList.toggle('overflow');
 
-  if (logo.style.display == 'none') {
-    logo.style.display = 'block';
+  if (navmenu.classList.contains('active')) {
+    menu.addEventListener('animationend', () => {
+      navmenu.classList.remove('active');
+    });
+  }
+
+  if (isMenuOpened == false) {
+    isMenuOpened = true;
+    navmenu.classList.remove('close');
+    navmenu.classList.add('active');
+    menu.classList.add('open');
   } else {
-    logo.style.display = 'none';
+    isMenuOpened = false;
+    navmenu.classList.add('close');
+    menu.classList.remove('open');
   }
 }
+
 
 // homepage landing video
 
@@ -35,10 +47,9 @@ function vidFade() {
   vid.classList.add("stopfade");
 }
 
-vid.addEventListener('ended', function()
-{
-vid.pause();
-vidFade();
+vid.addEventListener('ended', function() {
+  vid.pause();
+  vidFade();
 });
 
 
