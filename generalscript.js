@@ -14,7 +14,7 @@ function openMenu() {
   body.classList.toggle('overflow');
 
   if (navmenu.classList.contains('active')) {
-    menu.addEventListener('animationend', () => {
+    navmenu.addEventListener('animationend', () => {
       navmenu.classList.remove('active');
     });
   }
