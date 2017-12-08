@@ -43,6 +43,42 @@ button {
   display: none;
 }
 
+.primarybtn {
+  display: block;
+  cursor: pointer;
+  background-color: #ff0000;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  justify-content: center;
+  padding: 12px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+.secondarybtn {
+  border: 1px solid #fff;
+  cursor: pointer;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  padding: 12px;
+  font-weight: 400;
+}
+
+.tertiatybtn {
+  display: block;
+  cursor: pointer;
+  background-color: #272C36;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  justify-content: center;
+  padding: 12px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
 
 /*.equalizercontainer {
   background: none;
@@ -171,6 +207,7 @@ footer {
 .social {
   background: none;
   border: none;
+  padding: 3px;
 }
 
 

@@ -70,32 +70,11 @@ h2 {
   max-width: 340px;
 }
 
-.primarybtn {
-    display: block;
-  cursor: pointer;
-  background-color: #ff003c;
-  width: 100%;
-  max-width: 200px;
-  text-align: center;
-    justify-content: center;
-  padding: 12px;
-    margin: 0 auto;
-}
-
 a {
   color: white;
   font-weight: 200;
   font-size: 14px;
   text-decoration: none;
-}
-
-.secondarybtn {
-  border: 1px solid #fff;
-  cursor: pointer;
-  width: 100%;
-  max-width: 200px;
-  text-align: center;
-  padding: 12px;
 }
 
 #list h2 {
