@@ -8,29 +8,35 @@ let opened = document.querySelector('#opened');
 
 let isMenuOpened = false;
 
-menu.addEventListener('click', openMenu);
+enableMenu();
 
 function openMenu() {
   body.classList.toggle('overflow');
 
-  if (navmenu.classList.contains('active')) {
-    navmenu.addEventListener('animationend', () => {
-      navmenu.classList.remove('active');
-    });
-  }
+  menu.removeEventListener('click', openMenu, false);
+  navmenu.addEventListener('animationend', enableMenu);
 
   if (isMenuOpened == false) {
     isMenuOpened = true;
-    navmenu.classList.remove('close');
     navmenu.classList.add('active');
     menu.classList.add('open');
   } else {
     isMenuOpened = false;
     navmenu.classList.add('close');
     menu.classList.remove('open');
+    navmenu.addEventListener('animationend', navMenuAnimationListener);
   }
 }
 
+function navMenuAnimationListener() {
+  navmenu.classList.remove('active');
+  navmenu.classList.remove('close');
+  navmenu.removeEventListener('animationend', navMenuAnimationListener, false);
+}
+
+function enableMenu() {
+  menu.addEventListener('click', openMenu);
+}
 
 // homepage landing video
 
