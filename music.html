@@ -1,24 +1,80 @@
-<!DOCTYPE html>
-<html lang="">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="home.css">
-    <link rel="stylesheet" type="text/css" href="general.css">
-
-    <title>Musics</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+	<link rel="manifest" href="manifest.json">
+	<link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+	<title>Stas</title>
+	<link href="https://fonts.googleapis.com/css?family=Heebo:100,300,500,800,900" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="general.css">
+	<link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" type="text/css" href="music.css">
 </head>
 
 <body>
+	<header id="header">
+		<div class="iconsHeader">
+			<div class='equalizercontainer'>
+		    <div class='equalizerbar'></div>
+		    <div class='equalizerbar'></div>
+		    <div class='equalizerbar'></div>
+		    <div class='equalizerbar'></div>
+		    <div class='equalizerbar'></div>
+		    <div class='equalizerbar'></div>
+		  </div>
+			<button class="spotify">
+				<img src="img/spotify.png" alt=""> <p>Follow me</p>
+			</button>
+		</div>
+		<a id="logo" href="home.html">
+			<img src="img/logostashead.png" alt="logo">
+		</a>
+		<button id="burger-menu">
+				<svg id="closed" width="35px" height="35px" viewBox="0 0 51 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+						<title>closed_menu</title>
+						<desc>Created with Sketch.</desc>
+						<defs></defs>
+						<g id="Page-1" stroke="none" stroke-width="3" fill="#fffff" fill-rule="evenodd" stroke-linecap="round">
+								<g id="closed_menu" stroke="#fff">
+										<path d="M7.5,25.5 L43.5138862,25.5" id="Line"></path>
+										<path d="M7.5,38.5 L43.5138862,38.5" id="Line-Copy-2"></path>
+										<path d="M7.5,12.5 L43.5138862,12.5" id="Line-Copy"></path>
+								</g>
+						</g>
+				</svg>
+				<svg id="opened" width="35px" height="35px" viewBox="0 0 51 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+						<title>menu</title>
+						<desc>Created with Sketch.</desc>
+						<defs></defs>
+						<g id="Page-1" stroke="none" stroke-width="3" fill="#00000" fill-rule="evenodd" stroke-linecap="round">
+								<g id="menu" stroke="#000000">
+										<path d="M13,13 L38.4656632,38.4656632" id="Line-Copy-2"></path>
+										<path d="M38.4656632,13 L13,38.4656632" id="Line-Copy"></path>
+								</g>
+						</g>
+				</svg>
+			</button>
+	</header>
+	<nav class="navigation">
+		<div class="desktopmenu">
+			<a href="index.html">HOME</a>
+			<a href="events.html">EVENTS</a>
+			<a href="#">MUSIC</a>
+			<a href="#">ABOUT</a>
+			<button class="spotify">
+				<img src="img/spotify-black.png" alt=""> <p>Follow me</p>
+			</button>
+		</div>
+	</nav>
 
-    <header id="header">
 
-
-    </header>
-
-    <main>
+	<main>
 
         <h3 style="color:white">Albums</h3>
         <section id="list1">
@@ -62,6 +118,36 @@
         </article>
 
     </template>
+
+    <footer>
+		<section class="musicfollow">
+			<div class="column">
+				<button class="social">
+					<img src="img/soundcloud.png" alt="">
+				</button>
+				<button class="social">
+					<img src="img/youtube.png" alt="">
+				</button>
+				<button class="social">
+					<img src="img/apple.png" alt="">
+				</button>
+			</div>
+			<div class="column">
+				<button class="social">
+					<img src="img/facebook.png" alt="">
+				</button>
+				<button class="social">
+					<img src="img/instagram.png" alt="">
+				</button>
+				<button class="social">
+					<img src="img/twitter.png" alt="">
+				</button>
+			</div>
+		</section>
+		<section class="copyright">
+			<p>Copyright © Stas 2018. All rights reserved.</p>
+		</section>
+	</footer>
     <script src="musicscript.js"></script>
     <script src="albumscript.js"></script>
 </body>

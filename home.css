@@ -71,12 +71,15 @@ h2 {
 }
 
 .primarybtn {
+    display: block;
   cursor: pointer;
   background-color: #ff003c;
   width: 100%;
   max-width: 200px;
   text-align: center;
+    justify-content: center;
   padding: 12px;
+    margin: 0 auto;
 }
 
 a {

@@ -178,7 +178,7 @@ footer {
 
 .equalizercontainer {
   /*margin: 100px auto 0;*/
-  width: 40px;
+  width: 30px;
   height: 40px;
   display: flex;
   align-items: flex-end;
@@ -191,10 +191,11 @@ footer {
 }
 
 .equalizerbar {
-  width: 20px;
+  width: 4px;
   min-height: 10px;
   margin-right: 1px;
   background-color: #fff;
+  border-radius: 2px;
 }
 
 .equalizerbar:nth-child(1) {
