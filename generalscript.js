@@ -38,6 +38,25 @@ function enableMenu() {
   menu.addEventListener('click', openMenu);
 }
 
+//equalizer
+
+let equalizercontainer = document.querySelector('.equalizercontainer');
+let equalizerbar = document.querySelector('.equalizerbar');
+
+equalizercontainer.addEventListener('click', pauseAnimation);
+equalizerbar.addEventListener('animationend', addBackground);
+
+function pauseAnimation() {
+  // vid.volume = 0;
+  equalizercontainer.classList.toggle('pause');
+  equalizercontainer.classList.remove('blue-background');
+}
+
+function addBackground() {
+  equalizercontainer.classList.add('blue-background');
+}
+
+
 // homepage landing video
 
 var vid = document.getElementById("bgvid");
@@ -69,21 +88,3 @@ vid.addEventListener('ended', function() {
 //     pauseButton.innerHTML = "Paused";
 //   }
 // })
-
-//equalizer
-
-let equalizercontainer = document.querySelector('.equalizercontainer');
-let equalizerbar = document.querySelector('.equalizerbar');
-
-equalizercontainer.addEventListener('click', pauseAnimation);
-equalizerbar.addEventListener('animationend', addBackground);
-
-function pauseAnimation() {
-  // vid.volume = 0;
-  equalizercontainer.classList.toggle('pause');
-  equalizercontainer.classList.remove('blue-background');
-}
-
-function addBackground() {
-  equalizercontainer.classList.add('blue-background');
-}
