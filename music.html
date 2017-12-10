@@ -11,7 +11,6 @@
 	<title>Stas</title>
 	<link href="https://fonts.googleapis.com/css?family=Heebo:100,300,500,800,900" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="general.css">
-	<link rel="stylesheet" type="text/css" href="home.css">
     <link rel="stylesheet" type="text/css" href="music.css">
 </head>
 
@@ -76,11 +75,11 @@
 
 	<main>
 
-        <h3 style="color:white">Albums</h3>
+        <h1 class="pageheadline">Albums</h1>
         <section id="list1">
 
         </section>
-        <h3 style="color:white">Musics</h3>
+        <h1 class="pageheadline">Songs</h1>
         <section id="list">
 
         </section>
@@ -92,11 +91,13 @@
     <template id="albumTemplate">
         <article class="music">
             <img src="" alt="">
+            <div class="details">
             <div class="title">
-                <h2></h2>
-                <p class="date"><span></span></p>
+            <h2></h2>
+            <p class="date"><span></span></p>
             </div>
-            <p class="" style="margin-left:2em"><a href="" class="btn btn-sm secondary dBookNow">Listen</a>
+                </div>
+             <a class="tertiatybtn dBookNow">Listen</a>
                 <div id="mcontainer"></div>
 
 
@@ -107,11 +108,14 @@
     <template id="musicTemplate">
         <article class="music">
             <img src="" alt="">
+             <div class="details">
             <div class="title">
-                <h2></h2>
-                <p class="date"><span></span></p>
+            <h2></h2>
+            <p class="date"><span></span></p>
             </div>
-            <p class="" style="margin-left:2em"><a href="" style="" class="date dBookNow">Buy/share</a>
+            <img class="playbtn" src="img/playbtn.png" alt="">
+                </div>
+            <a class="tertiatybtn dBookNow">Buy</a>
                 <div id="mcontainer"></div>
 
 
@@ -134,13 +138,13 @@
 				</div>
 				<div class="column">
 					<a href="https://www.facebook.com/StasMusic/"class="social">
-						<img src="img/facebook.png" alt="">
-					</a>
-					<a href="https://www.instagram.com/stas_from_babylon/"class="social">
-						<img src="img/instagram.png" alt="">
-					</a>
-					<a href=""class="social">
-						<img src="img/twitter.png" alt="">
+					<img src="img/facebook.png" alt="">
+				</a>
+				<a href="https://www.instagram.com/stas_from_babylon/"class="social">
+					<img src="img/instagram.png" alt="">
+				</a>
+				<a href=""class="social">
+					<img src="img/twitter.png" href="mailto:stasbendarzsevszkij@gmail.com?Subject=Hello" alt="">
 					</a>
 				</div>
 			</div>
