@@ -1,0 +1,119 @@
+#head {
+  width: 100%;
+  height: 65vh;
+}
+video {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 400%;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    transition: 1s opacity;}
+
+
+#list {
+  padding-bottom: 2em;
+  background: rgba(17, 17, 19, 1);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.event {
+  background-color: #151516;
+  box-shadow: 10px 8px 40px 8px #050510;
+  margin: 20px 0;
+  padding: 30px 30px 0px 30px;
+  width: 250px;
+  display: grid;
+  max-height: 180px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 36px;
+  color: white;
+}
+
+h2 {
+  font-size: 21px;
+  color: white;
+  margin: 0;
+}
+
+.date {
+    line-height: 0.8em;
+  font-weight: 100;
+  color: white;
+  font-size: 0.8em;
+}
+
+.place {
+    line-height: 0.8em;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  font-weight: 100;
+  color: white;
+  font-size: 0.8em;
+}
+
+.primarybtn {
+    display: block;
+  cursor: pointer;
+  background-color: #ff003c;
+  width: 200px;
+  padding: 12px;
+  color: white;
+  font-weight: 100;
+  border: none;
+  border-radius: 0px;
+    margin: 0 auto;
+
+}
+
+.release {
+  height: 130px;
+  background: -webkit-linear-gradient(top, rgba(17, 17, 19, 0), rgba(17, 17, 19, 1));
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(top, rgba(17, 17, 19, 0), rgba(17, 17, 19, 1));
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(top, rgba(17, 17, 19, 0), rgba(17, 17, 19, 1));
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(top, rgba(17, 17, 19, 0), rgba(17, 17, 19, 1));
+  /* Standard syntax (must be last) */
+}
+
+.pageheadline {
+  text-align: right;
+  padding-top: 100px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+  #list {
+    flex-direction: row;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+    video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+  transition: 1s opacity;
+}
+}
+
