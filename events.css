@@ -33,7 +33,7 @@ video {
   width: 250px;
   display: grid;
   max-height: 180px;
-  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-out;
 }
 
 .event:hover {
@@ -72,19 +72,6 @@ h2 {
   font-weight: 100;
   color: white;
   font-size: 0.8em;
-}
-
-.primarybtn {
-  display: block;
-  cursor: pointer;
-  background-color: #ff003c;
-  width: 200px;
-  padding: 12px;
-  color: white;
-  font-weight: 100;
-  border: none;
-  border-radius: 0px;
-  margin: 0 auto;
 }
 
 .release {

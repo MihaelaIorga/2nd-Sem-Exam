@@ -1,0 +1,23 @@
+.textaboutpage {
+  color: white;
+  font-weight: 200;
+  max-width: 60%;
+  margin-top: 80px;
+  margin-right: 100px;
+}
+
+.textaboutpage h1 {
+  color: white;
+  font-size: 36px;
+}
+
+.profilepic {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+section {
+  display: flex;
+  flex-direction: row-reverse;
+}

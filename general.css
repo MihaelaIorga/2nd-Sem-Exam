@@ -54,19 +54,15 @@ button {
   padding: 12px;
   margin: 0 auto;
   font-weight: 300;
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 0px;
 }
 
 .primarybtn:hover {
-  display: block;
-  cursor: pointer;
   background-color: #c60202;
-  width: 100%;
-  max-width: 200px;
-  text-align: center;
-  justify-content: center;
-  padding: 12px;
-  margin: 0 auto;
-  font-weight: 300;
 }
 
 .secondarybtn {
@@ -77,16 +73,11 @@ button {
   text-align: center;
   padding: 12px;
   font-weight: 300;
+  outline: none;
 }
 
 .secondarybtn:hover {
   border: 1px solid #fff;
-  cursor: pointer;
-  width: 100%;
-  max-width: 200px;
-  text-align: center;
-  padding: 12px;
-  font-weight: 300;
   background-color: white;
   color: #272C36;
 }
@@ -102,26 +93,12 @@ button {
   padding: 12px;
   margin: 0 auto;
   font-weight: 300;
+  outline: none;
 }
 
 .tertiatybtn:hover {
-  display: block;
-  cursor: pointer;
   background-color: red;
-  width: 100%;
-  max-width: 200px;
-  text-align: center;
-  justify-content: center;
-  padding: 12px;
-  margin: 0 auto;
-  font-weight: 300;
 }
-
-
-/*.equalizercontainer {
-  background: none;
-  border: none;
-}*/
 
 #logo {
   margin-top: 20px;
@@ -167,39 +144,37 @@ button {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  z-index: 2;
   background-color: white;
   animation: hereitgoes 500ms;
 }
 
 @keyframes hereitgoes {
   from {
-    /*opacity: 0;*/
     transform: translate3d(100%, 0, 0);
   }
   to {
-    /*opacity: 1;*/
-      transform: none;
+    transform: none;
   }
 }
 
 .desktopmenu.close {
   animation: goaway 500ms forwards;
 }
+
 @keyframes goaway {
   from {
-    /*opacity: 1;*/
-  transform: none;
+    transform: none;
   }
   to {
     transform: translate3d(100%, 0, 0);
-    /*opacity: 0;*/
   }
 }
 
 .desktopmenu.active a {
   text-decoration: none;
-  padding: 10px;
-  font-size: 20px;
+  padding: 15px;
+  font-size: 25px;
 }
 
 body.overflow {
@@ -207,7 +182,7 @@ body.overflow {
 }
 
 #burger-menu {
-  z-index: 1;
+  z-index: 3;
   right: 0;
   padding: 30px;
   margin-right: 6px;
@@ -233,7 +208,6 @@ body.overflow {
 #burger-menu.open #closed {
   display: none;
 }
-
 
 footer {
   display: flex;

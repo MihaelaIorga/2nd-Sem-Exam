@@ -12,7 +12,7 @@ enableMenu();
 
 function openMenu() {
   body.classList.toggle('overflow');
-
+  
   menu.removeEventListener('click', openMenu, false);
   navmenu.addEventListener('animationend', enableMenu);
 
