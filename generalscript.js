@@ -4,20 +4,38 @@ let navmenu = document.querySelector('.desktopmenu');
 let body = document.querySelector('body');
 let menu = document.querySelector('#burger-menu');
 let logo = document.querySelector('#logo');
+let opened = document.querySelector('#opened');
 
-menu.addEventListener('click', openMenu);
+let isMenuOpened = false;
+
+enableMenu();
 
 function openMenu() {
-  console.log('click');
-  menu.classList.toggle('open');
-  navmenu.classList.toggle('active');
   body.classList.toggle('overflow');
 
-  if (logo.style.display == 'none') {
-    logo.style.display = 'block';
+  menu.removeEventListener('click', openMenu, false);
+  navmenu.addEventListener('animationend', enableMenu);
+
+  if (isMenuOpened == false) {
+    isMenuOpened = true;
+    navmenu.classList.add('active');
+    menu.classList.add('open');
   } else {
-    logo.style.display = 'none';
+    isMenuOpened = false;
+    navmenu.classList.add('close');
+    menu.classList.remove('open');
+    navmenu.addEventListener('animationend', navMenuAnimationListener);
   }
+}
+
+function navMenuAnimationListener() {
+  navmenu.classList.remove('active');
+  navmenu.classList.remove('close');
+  navmenu.removeEventListener('animationend', navMenuAnimationListener, false);
+}
+
+function enableMenu() {
+  menu.addEventListener('click', openMenu);
 }
 
 // homepage landing video
@@ -35,10 +53,9 @@ function vidFade() {
   vid.classList.add("stopfade");
 }
 
-vid.addEventListener('ended', function()
-{
-vid.pause();
-vidFade();
+vid.addEventListener('ended', function() {
+  vid.pause();
+  vidFade();
 });
 
 
