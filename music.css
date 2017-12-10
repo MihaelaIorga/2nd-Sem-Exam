@@ -42,6 +42,93 @@
   margin: 20px 0;
 }
 
+h1 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 36px;
+  color: white;
+}
+
+.pageheadline {
+  text-align: right;
+  padding-top: 100px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 21px;
+  color: white;
+  margin: 0;
+}
+
+#mcontainer {
+  width: auto;
+  background: blue;
+  display: none;
+}
+
+#list article {
+  max-width: 340px;
+}
+
+a {
+  color: white;
+  font-weight: 200;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.music img {
+  max-width: 300px;
+  margin: 20px;
+}
+
+.details {
+  display: inline-flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+#list .date {
+  font-weight: 100;
+  color: white;
+  margin: 0;
+  font-size: 0.8em;
+}
+
+.details .title {
+  margin-left: 20px;
+}
+
+.title h2 {
+  font-weight: 400;
+}
+
+.music {
+  background-color: #151516;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: box-shadow 0.3s ease-in-out;
+  display: grid;
+  margin: 20px 0;
+}
+
+.music:hover {
+ background-color: #151516;
+  box-shadow: 10px 8px 100px #050510;
+  display: grid;
+  margin: 20px 0;
+}
+
+.playbtn {
+  margin-right: 30px;
+  height: 40px;
+  width: 40px;
+  border: none;
+}
+
+
 @media screen and (min-width: 1024px) {
   #list{
     flex-direction: row;
