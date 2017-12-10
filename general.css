@@ -271,12 +271,14 @@ footer {
 .social img {
   max-width: 30px;
   max-height: 25px;
+  cursor: pointer;
 }
 
 .social {
   background: none;
   border: none;
   padding: 3px;
+  cursor: pointer;
 }
 
 
@@ -555,6 +557,7 @@ footer {
   #logo {
     margin-left: -100px;
     margin-top: 20px;
+    cursor: pointer;
   }
   #logo img {
     max-width: 150px;
@@ -588,5 +591,6 @@ footer {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    z-index: 1;
   }
 }
