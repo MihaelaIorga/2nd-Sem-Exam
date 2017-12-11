@@ -18,6 +18,14 @@ header {
 button {
   cursor: pointer;
 }
+.pageheadline {
+  text-align: left;
+  padding-top: 100px;
+  width: 100%;
+  max-width: 1440px;
+  margin-left: 40px;
+  margin-bottom: -10px;
+}
 
 .iconsHeader {
   display: flex;
@@ -207,6 +215,23 @@ body.overflow {
 
 #burger-menu.open #closed {
   display: none;
+}
+
+.music {
+  background: #151516;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease-out;
+  display: grid;
+  margin: 20px 0;
+}
+
+.music:hover {
+  transition-property: background;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  background-color: #1b1b1d;
+  box-shadow: 10px 8px 100px black;
+  transform: scale(1.007);
 }
 
 footer {

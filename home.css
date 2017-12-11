@@ -38,14 +38,6 @@ h1 {
   color: white;
 }
 
-.pageheadline {
-  text-align: right;
-  padding-top: 100px;
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
 h2 {
   font-size: 27px;
 }
@@ -102,23 +94,6 @@ a {
 
 .title h2 {
   font-weight: 400;
-}
-
-.music {
-  background-color: #151516;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-  transition: box-shadow 0.3s ease-in-out;
-  display: grid;
-  margin: 20px 0;
-    width: 500px;
-    max-height: 600px;
-}
-
-.music:hover {
- background-color: #151516;
-  box-shadow: 10px 8px 100px #050510;
-  display: grid;
-  margin: 20px 0;
 }
 
 .playbtn {

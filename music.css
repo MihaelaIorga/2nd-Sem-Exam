@@ -48,14 +48,6 @@ h1 {
   color: white;
 }
 
-.pageheadline {
-  text-align: right;
-  padding-top: 100px;
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
 h2 {
   font-size: 21px;
   color: white;
@@ -103,23 +95,6 @@ a {
 
 .title h2 {
   font-weight: 400;
-}
-
-.music {
-  background: #151516;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  transition: box-shadow 0.3s ease-out;
-  display: grid;
-  margin: 20px 0;
-}
-
-.music:hover {
-  transition-property: background;
-  transition-duration: 0.2s;
-  transition-timing-function: linear;
-  background-color: #1b1b1d;
-  box-shadow: 10px 8px 100px black;
-  transform: scale(1.007);
 }
 
 .playbtn {
