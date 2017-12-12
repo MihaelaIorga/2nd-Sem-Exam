@@ -74,14 +74,6 @@ h2 {
   /* Standard syntax (must be last) */
 }
 
-.pageheadline {
-  text-align: right;
-  padding-top: 100px;
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
 @media screen and (min-width: 1024px) {
   #list {
     flex-direction: row;
