@@ -1,7 +1,19 @@
 #head {
   width: 100%;
-  height: 65vh;
+  height: 60vh;
 }
+
+ video {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 400%;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    transition: 1s opacity;
+  }
 
 #list {
   padding-bottom: 2em;
@@ -75,11 +87,12 @@ h2 {
 }
 
 .pageheadline {
-  text-align: right;
+  text-align: left;
   padding-top: 100px;
   width: 100%;
   max-width: 1440px;
-  margin: 0 auto;
+  margin-left: 40px;
+  margin-bottom: -10px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -87,5 +100,17 @@ h2 {
     flex-direction: row;
     max-width: 1440px;
     margin: 0 auto;
+  }
+
+     video {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    transition: 1s opacity;
   }
 }
