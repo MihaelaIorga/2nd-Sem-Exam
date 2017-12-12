@@ -33,3 +33,20 @@ function showEvents(data) {
 
 
 getAllEvents();
+
+
+// mute video
+
+var div = document.getElementById('mute');
+
+function enableMute() {
+    if (vid.muted === false) {
+       vid.muted = true;
+}
+
+else {
+    vid.muted = false;
+}
+};
+
+//replay
