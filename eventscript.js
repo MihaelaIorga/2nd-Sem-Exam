@@ -40,13 +40,11 @@ getAllEvents();
 var div = document.getElementById('mute');
 
 function enableMute() {
-    if (vid.muted === false) {
-       vid.muted = true;
+    if (bgvid.muted === false) {
+       bgvid.muted = true;
 }
 
 else {
-    vid.muted = false;
+    bgvid.muted = false;
 }
 };
-
-//replay
