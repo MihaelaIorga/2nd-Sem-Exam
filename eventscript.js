@@ -33,3 +33,18 @@ function showEvents(data) {
 
 
 getAllEvents();
+
+
+// mute video
+
+var div = document.getElementById('mute');
+
+function enableMute() {
+    if (bgvid.muted === false) {
+       bgvid.muted = true;
+}
+
+else {
+    bgvid.muted = false;
+}
+};
