@@ -572,6 +572,7 @@ footer {
     width: auto;
     color: white;
     align-items: center;
+    outline: none;
   }
   #burger-menu {
     margin-right: 6px;
@@ -581,6 +582,7 @@ footer {
     margin: 0;
     padding: 12px;
     font-weight: 300;
+    font-size: 11px;
   }
   .navigation .spotify {
     display: none;
@@ -602,26 +604,28 @@ footer {
     padding-right: 30px;
   }
   footer {
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 1024px;
-    margin: 0 auto;
-  }
-  .copyright {
-    font-size: 0.8em;
-    color: #9E9E9E;
-    font-weight: 100;
-    line-height: 6em;
-    position: absolute;
-    width: 100%;
-    max-width: 1024px;
-  }
-  .musicfollow {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    z-index: 1;
-  }
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.copyright {
+  font-size: 0.8em;
+  color: #9E9E9E;
+  font-weight: 100;
+  line-height: 6em;
+  position: absolute;
+  width: 100%;
+  max-width: 1024px;
+}
+
+.musicfollow {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 1;
+}
 }
