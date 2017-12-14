@@ -18,13 +18,37 @@ header {
 button {
   cursor: pointer;
 }
+
+h1 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 36px;
+  color: white;
+}
+
+h2 {
+  font-size: 27px;
+  color: white;
+}
+
 .pageheadline {
   text-align: left;
-  padding-top: 100px;
   max-width: 1440px;
   margin-left: 40px;
   margin-bottom: -10px;
   width: calc(100% - 40px);
+  margin-top: -20px;
+}
+
+.release {
+  background: -webkit-linear-gradient(top, rgba(17, 17, 19, 0), rgba(17, 17, 19, 1));
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(top, rgba(17, 17, 19, 0), rgba(17, 17, 19, 1));
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(top, rgba(17, 17, 19, 0), rgba(17, 17, 19, 1));
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(top, rgba(17, 17, 19, 0), rgba(17, 17, 19, 1));
+  /* Standard syntax (must be last) */
 }
 
 .iconsHeader {
@@ -54,7 +78,7 @@ button {
 .primarybtn {
   display: block;
   cursor: pointer;
-  background-color: #ff0000;
+  background-color: #272C36;
   width: 100%;
   max-width: 200px;
   text-align: center;
@@ -63,14 +87,10 @@ button {
   margin: 0 auto;
   font-weight: 300;
   outline: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-  border-radius: 0px;
 }
 
 .primarybtn:hover {
-  background-color: #c60202;
+  background-color: red;
 }
 
 .secondarybtn {
@@ -93,7 +113,7 @@ button {
 .tertiatybtn {
   display: block;
   cursor: pointer;
-  background-color: #272C36;
+  background-color: #ff0000;
   width: 100%;
   max-width: 200px;
   text-align: center;
@@ -102,10 +122,14 @@ button {
   margin: 0 auto;
   font-weight: 300;
   outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 0px;
 }
 
 .tertiatybtn:hover {
-  background-color: red;
+  background-color: #c60202;
 }
 
 #logo {

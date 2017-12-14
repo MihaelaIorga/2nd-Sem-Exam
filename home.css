@@ -1,45 +1,15 @@
 #head {
-  width: 100%;
-  height: 60vh;
+  display: block;
 }
-
-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: auto;
-  z-index: -100;
-  transform: translateX(-50%) translateY(-50%);
-  background-size: cover;
-  transition: 1s opacity;
+#head video {
+  width: 100vw;
+  z-index: -10;
+  position: relative;
+  margin: -110px 0 0 0;
 }
 
 .stopfade {
   opacity: .5;
-}
-
-.release {
-  height: 130px;
-  background: -webkit-linear-gradient(top, rgba(17, 17, 19, 0), rgba(17, 17, 19, 1));
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(top, rgba(17, 17, 19, 0), rgba(17, 17, 19, 1));
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(top, rgba(17, 17, 19, 0), rgba(17, 17, 19, 1));
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(top, rgba(17, 17, 19, 0), rgba(17, 17, 19, 1));
-  /* Standard syntax (must be last) */
-}
-
-h1 {
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 36px;
-  color: white;
-}
-
-h2 {
-  font-size: 27px;
 }
 
 #mcontainer {
@@ -71,7 +41,6 @@ a {
 
 #list h2 {
   font-size: 21px;
-  color: white;
   margin: 0;
 }
 
@@ -138,30 +107,5 @@ a {
     flex-direction: row;
     max-width: 1440px;
     margin: 0 auto;
-  }
-  video {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: auto;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
-    background-size: cover;
-    transition: 1s opacity;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  video {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    width: 400%;
-    height: auto;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
-    background-size: cover;
-    transition: 1s opacity;
   }
 }
