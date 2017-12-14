@@ -156,6 +156,9 @@ h2 {
 
 .navigation .spotify img {
   max-width: 50px;
+  margin: 0 auto;
+  display: flex;
+  align-content: center;
 }
 
 .navigation a:hover {
@@ -568,6 +571,7 @@ footer {
     border: none;
     width: auto;
     color: white;
+    align-items: center;
   }
   #burger-menu {
     margin-right: 6px;
@@ -576,6 +580,7 @@ footer {
     display: block;
     margin: 0;
     padding: 12px;
+    font-weight: 300;
   }
   .navigation .spotify {
     display: none;

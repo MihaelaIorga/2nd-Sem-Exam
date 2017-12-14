@@ -1,9 +1,14 @@
 #head {
+  display: none;
+}
+
+#headimage {
   display: block;
 }
-#head video {
+
+#headimage img {
   width: 100vw;
-  z-index: -10;
+  z-index: -11;
   position: relative;
   margin: -110px 0 0 0;
 }
@@ -70,6 +75,7 @@ a {
   height: 40px;
   width: 40px;
   border: none;
+  cursor: pointer;
 }
 
 .music img {
@@ -100,6 +106,21 @@ a {
   margin-top: 20px;
   display: flex;
   justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  #headimage {
+    display: none;
+  }
+  #head {
+    display: block;
+  }
+  #head video {
+    width: 100vw;
+    z-index: -10;
+    position: relative;
+    margin: -110px 0 0 0;
+  }
 }
 
 @media screen and (min-width: 1024px) {
