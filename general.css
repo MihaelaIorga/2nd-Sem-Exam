@@ -6,6 +6,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 header {
@@ -217,7 +218,6 @@ body.overflow {
   z-index: 3;
   right: 0;
   padding: 30px;
-  margin-right: 6px;
   display: block;
   border-color: transparent;
   background-color: transparent;
@@ -568,6 +568,9 @@ footer {
     border: none;
     width: auto;
     color: white;
+  }
+  #burger-menu {
+    margin-right: 6px;
   }
   .iconsHeader .spotify p {
     display: block;
